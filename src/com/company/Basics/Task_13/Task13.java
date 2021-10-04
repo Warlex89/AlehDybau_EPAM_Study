@@ -1,3 +1,4 @@
+//Вычислить значения функции на отрезке [а,b] c шагом h:
 package com.company.Basics.Task_13;
 import java.util.Scanner;
 import static java.lang.System.*;

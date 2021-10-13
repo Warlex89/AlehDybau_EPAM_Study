@@ -24,7 +24,7 @@ public class Task7 {
         for(int j = 0; j < array.length/2; j++){
             max = array[j]+array[array.length-1-j] > max && j != array.length-1-j ? array[j]+array[array.length-1-j] : max;
         }
-        out.println("Получен массив после замены "+ Arrays.toString(array));
+        out.println("Получен массив "+ Arrays.toString(array));
         out.println("Максимальная сумма чисел = "+max);
     }
 }

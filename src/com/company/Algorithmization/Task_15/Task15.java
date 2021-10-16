@@ -12,7 +12,6 @@ public class Task15 {
         array = new int[n][n];
         out.println("Получена искомая матрица ");
         for (int i = 0; i < n; i++) {
-            if(i != 0){
                 for (int j = 0; j < n - i; j++){
                     array[i][j] = n - (n-k);
                     out.print(" " + array[i][j] + " ");
@@ -21,12 +20,6 @@ public class Task15 {
                     array[i][j] = 0;
                     out.print(" " + array[i][j] + " ");
                 }
-            } else {
-                for (int j = 0; j < n; j++) {
-                    array[i][j] = n - (n - k);
-                    out.print(" " + array[i][j] + " ");
-                }
-            }
             k++;
             out.println();
         }

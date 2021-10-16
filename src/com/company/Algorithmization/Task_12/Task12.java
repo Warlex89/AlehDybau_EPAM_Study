@@ -25,7 +25,7 @@ public class Task12 {
             for (int j = 0; j < n; j++){
                 if ( i == j){
                     out.print(" "+array[i][j]+" ");
-                }else out.print(" ");
+                }else out.print("   ");
             }
             out.println();
         }

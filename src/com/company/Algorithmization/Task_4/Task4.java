@@ -18,7 +18,7 @@ public class Task4 {
         for(int i=0; i<array.length; i++) {
             st = random.nextBoolean();
             if (st == false) n = (-n);
-            l = (int) (random() * n);// создаётся случайное действительное число от -n до n для массива
+            l = (int) (random() * n);// создаётся случайное действительное число от -n< до <n для массива
             array[i] = l;
             if(i == 0){
                 min = array[0];

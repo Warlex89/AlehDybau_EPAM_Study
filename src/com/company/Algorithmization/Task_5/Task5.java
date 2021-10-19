@@ -15,7 +15,7 @@ public class Task5 {
         n = sc.nextInt();
         array = new int[n];
         for(int i = 0; i<n; i++){
-            l = (int) (random() * n);// создаётся случайное действительное число от 0 до n для массива
+            l = (int) (random() * n);// создаётся случайное действительное число от 0 до <n для массива
             array[i] = l;
             if(l>i) out.println(l);
             }

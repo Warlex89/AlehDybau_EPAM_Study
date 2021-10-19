@@ -19,7 +19,7 @@ public class Task3 {
         for(int i=0; i<array.length; i++){
             st = random.nextBoolean();
             if(st == false) n=(-n);
-            l = (int)(random()*n);// создаётся случайное действительное число от -n до n для массива
+            l = (int)(random()*n);// создаётся случайное действительное число от -n< до <n для массива
             if(l>0) countP+=1;
             if(l<0) countM+=1;
             if(l==0) countO +=1;

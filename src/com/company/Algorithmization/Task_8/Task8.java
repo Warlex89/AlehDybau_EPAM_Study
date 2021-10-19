@@ -19,7 +19,7 @@ public class Task8 {
         for (int i = 0; i < array1.length; i++) {
             st = random.nextBoolean();
             if (st == false) n = (-n);
-            l = (int) (random() * n);// создаётся случайное действительное число от -n до n для массива
+            l = (int) (random() * n);// создаётся случайное действительное число от -n< до <n для массива
             array1[i] = l;
         }
         out.println("Первый массив "+ Arrays.toString(array1));

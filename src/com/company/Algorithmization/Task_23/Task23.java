@@ -1,6 +1,4 @@
 package com.company.Algorithmization.Task_23;
-import com.company.Algorithmization.Task_22.Task22;
-
 import java.util.Scanner;
 import static java.lang.System.*;
 import static java.lang.Math.*;

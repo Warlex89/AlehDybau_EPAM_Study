@@ -43,7 +43,7 @@ public class Task22 {
         // выводим полученную матрицу
         out.println("В результате сортировки получена следующая матрица (по возрастанию) ");
         task22.printMatrix(array,n ,m);
-        // производим сортировку матрицы по возрастанию
+        // производим сортировку матрицы по убыванию
         while (needIteration) {
             needIteration = false;
             for (int i = 0; i < n; i++){

@@ -18,8 +18,11 @@ public class Task28 {
         sum = new int[array1.length + array2.length];
         // Создание первого массива
         for (int i = 0; i < array1.length; i++) array1[i] = (int) (random() * a1);
+        Arrays.sort(array1);
         // Создание второго массива
         for (int i = 0; i < array2.length; i++) array2[i] = (int) (random() * a2);
+        Arrays.sort(array2);
+        // Создание итогового массива
         arraycopy(array1, 0, sum, 0, a1);
         arraycopy(array2, 0, sum, a1, a2);
         Arrays.sort(sum);

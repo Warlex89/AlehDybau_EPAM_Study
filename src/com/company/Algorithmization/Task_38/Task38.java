@@ -7,13 +7,11 @@ import static java.lang.System.*;
 public class Task38 {
     public static void main(String[] args) {
         Task38 task38 = new Task38();
-        int n, array[][], dist[][], x[], y[], l, valDist,max = 0;
+        int n, array[][], l;
         Scanner sc = new Scanner(in);
         out.println("Введите количество точек ");
         n = sc.nextInt();
         array = new int[2][n];
-        x = new int[n];
-        y = new int[n];
         out.println("Получен следующий массив с координатами точек, где первое число в столбце равно х, а второе у ");
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < n; j++) {
@@ -23,6 +21,14 @@ public class Task38 {
             }
             out.println();
         }
+        task38.Result(array,n);
+    }
+    public static void Result(int[][] ar, int n){
+        Task38 task38 = new Task38();
+        int [][] array = ar;
+        int x[] = new int[n];
+        int y[] = new int[n];
+        int dist[][], valDist,max = 0;
         for (int j = 0; j < n; j++){
             x[j] = array[0][j];
             y[j] = array[1][j];
@@ -33,7 +39,7 @@ public class Task38 {
                 max = (valDist > max) ? valDist : max;
             }
         }
-        out.println("Максимальное расстояние между координатами равно "+max);
+        out.println("Максимальное расстояние между точками равно "+max);
         out.println("Максимальное расстояние выявлено между точками со следующими координатами:");
         dist = new int[2][2];
         for (int i = 0; i < n-1; i++) {

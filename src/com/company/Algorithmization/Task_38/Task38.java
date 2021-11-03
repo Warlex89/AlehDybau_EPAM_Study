@@ -6,7 +6,6 @@ import static java.lang.System.*;
 
 public class Task38 {
     public static void main(String[] args) {
-        Task38 task38 = new Task38();
         int n, array[][], l;
         Scanner sc = new Scanner(in);
         out.println("Введите количество точек ");
@@ -21,13 +20,12 @@ public class Task38 {
             }
             out.println();
         }
-        task38.Result(array,n);
+        Result(array,n);
     }
     public static void Result(int[][] ar, int n){
-        Task38 task38 = new Task38();
         int [][] array = ar;
-        int x[] = new int[n];
-        int y[] = new int[n];
+        int[] x = new int[n];
+        int[] y = new int[n];
         int dist[][], valDist,max = 0;
         for (int j = 0; j < n; j++){
             x[j] = array[0][j];
@@ -35,7 +33,7 @@ public class Task38 {
         }
         for (int i = 0; i < n-1; i++) {
             for (int j = i+1; j < n; j++) {
-                valDist = task38.Distance(x[i], y[i], x[j], y[j]);
+                valDist = Distance(x[i], y[i], x[j], y[j]);
                 max = (valDist > max) ? valDist : max;
             }
         }
@@ -44,7 +42,7 @@ public class Task38 {
         dist = new int[2][2];
         for (int i = 0; i < n-1; i++) {
             for (int j = i+1; j < n; j++) {
-                valDist = task38.Distance(x[i], y[i], x[j], y[j]);
+                valDist = Distance(x[i], y[i], x[j], y[j]);
                 if (valDist == max){
                     dist[0][0] = x[i];
                     dist[0][1] = y[i];

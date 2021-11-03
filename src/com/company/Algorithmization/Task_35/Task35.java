@@ -6,14 +6,13 @@ import static java.lang.System.*;
 public class Task35 {
     public static void main(String[] args){
         int a, b, nOD, nOK;
-        Task35 tsk = new Task35();
         Scanner sc = new Scanner(in);
         out.println("Введите значение переменной а ");
         a = sc.nextInt();
         out.println("Введите значение переменной b ");
         b = sc.nextInt();
-        nOD = tsk.NOD(a,b);
-        nOK = tsk.NOK(a,b,nOD);
+        nOD = NOD(a,b);
+        nOK = NOK(a,b,nOD);
         out.println("Наименьший общий делитель = "+nOD);
         out.println("Наименьшее общее кратное = "+nOK);
     }

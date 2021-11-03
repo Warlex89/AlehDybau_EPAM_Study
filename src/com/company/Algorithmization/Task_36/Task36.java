@@ -6,7 +6,6 @@ import static java.lang.System.*;
 public class Task36 {
     public static void main(String[] args){
         int a, b, c, d, nOD;
-        Task36 tsk = new Task36();
         Scanner sc = new Scanner(in);
         out.println("Введите значение переменной а ");
         a = sc.nextInt();
@@ -16,7 +15,7 @@ public class Task36 {
         c = sc.nextInt();
         out.println("Введите значение переменной d ");
         d = sc.nextInt();
-        nOD = tsk.NOD(a,b,c,d);
+        nOD = NOD(a,b,c,d);
         out.println("Наименьший общий делитель = "+nOD);
     }
     public static int NOD(int a, int b, int c, int d) {

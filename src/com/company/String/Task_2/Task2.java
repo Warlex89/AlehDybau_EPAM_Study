@@ -4,6 +4,7 @@ import static java.lang.System.*;
 
 public class Task2 {
     public static void main(String[] args){
+        out.println("Замените в строке все вхождения 'word' на 'letter'.");
         String letter = inputLetter();
         String resultLetter = finalLetter(letter);
         out.println("Первоначальное предложение: "+letter);

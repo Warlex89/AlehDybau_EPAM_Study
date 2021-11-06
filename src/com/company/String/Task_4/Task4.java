@@ -4,6 +4,7 @@ import static java.lang.System.*;
 
 public class Task4 {
     public static void main(String[] args){
+        out.println("В строке найти количество чисел.");
         String letter = inputLetter();
         out.println("Первоначальное предложение: "+letter);
         out.println("Количество чисел в предложении "+counterNumber(letter));

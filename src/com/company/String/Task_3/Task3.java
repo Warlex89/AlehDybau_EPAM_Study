@@ -4,6 +4,7 @@ import static java.lang.System.*;
 
 public class Task3 {
     public static void main(String[] args){
+        out.println("В строке найти количество цифр.");
         String letter = inputLetter();
         out.println("Первоначальное предложение: "+letter);
         out.println("Количество цифр в предложении "+counter(letter));

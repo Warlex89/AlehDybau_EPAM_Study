@@ -1,5 +1,4 @@
 package com.company.String.Task_1;
-import java.util.Arrays;
 import java.util.Scanner;
 import static java.lang.System.*;
 

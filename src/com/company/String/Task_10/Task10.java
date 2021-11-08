@@ -11,7 +11,7 @@ public class Task10 {
     }
     public static String inputLetter (){
         Scanner sc = new Scanner(in);
-        out.println("Введите слово ");
+        out.println("Введите строку ");
         return sc.nextLine();
     }
     public static int countA (String sentence){

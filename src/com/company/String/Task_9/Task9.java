@@ -3,6 +3,7 @@ import static java.lang.System.*;
 
 public class Task9 {
     public static void main(String[] args){
+        out.println("С помощью функции копирования и операции конкатенации составить из частей слова “информатика” слово “торт”.");
         String word = "информатика";
         out.println(createWord(word));
     }

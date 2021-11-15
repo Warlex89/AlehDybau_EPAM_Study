@@ -1,6 +1,13 @@
 package com.company.Classes.Task_1;
 import java.util.Scanner;
 
+/**
+ * Создайте класс Test1 c двумя переменными. Добавьте метод вывода на экран и
+ * методы изменения этих переменных. Добавьте метод, который находит сумму
+ * значений этих переменных, и метод, который находит наибольшее значение
+ * из этих двух переменных.
+ */
+
 public class Main {
     public static void main(String[] args) {
         Task1 task1 = new Task1();

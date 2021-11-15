@@ -1,6 +1,12 @@
 package com.company.Classes.Task_2;
 import java.util.Scanner;
 
+/**
+ * Создйте класс Test2 двумя переменными. Добавьте конструктор с входными
+ * параметрами. Добавьте конструктор, инициализирующий члены класса по
+ * умолчанию. Добавьте set- и get- методы для полей экземпляра класса.
+ */
+
 public class Main {
     public static void main(String[] args) {
         Task2 task2 = new Task2(10,12);

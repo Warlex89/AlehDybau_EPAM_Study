@@ -14,28 +14,23 @@ public class Commands { public static void main(String[] args) {
     out.println("Введите 4 чтобы установить свои значения счётчика");
     out.println("Для выхода из программы нажмите 0");
     while (choice !=0){
-        out.println("Введите команду");
+        out.println("Введите команду ");
         choice = sc.nextInt();
-        switch (choice){
-            case 1: System.out.println("Значение счётчика: "+counter.getCurrentNumber());
-                break;
-            case 2: counter.decreaseNumber();
-                break;
-            case 3: counter.increaseNumber();
-                break;
-            case 4:
+        switch (choice) {
+            case 1 -> System.out.println("Значение счётчика: " + counter.getCurrentNumber());
+            case 2 -> counter.decreaseNumber();
+            case 3 -> counter.increaseNumber();
+            case 4 -> {
                 out.println("Введите начальное значение счётчика: ");
                 int startNum = sc.nextInt();
                 out.println("Введите настоящее значение счётчика: ");
                 int currentNum = sc.nextInt();
                 out.println("Введите финальное значение счётчика");
                 int finalNum = sc.nextInt();
-                counter = new Counter (currentNum, startNum, finalNum);
-                break;
-            case 0:
-                out.println("Закрытие программы");
-            default:
-                out.println("Неверная команда");
+                counter = new Counter(currentNum, startNum, finalNum);
+            }
+            case 0 -> out.println("Закрытие программы");
+            default -> out.println("Неверная команда");
         }
 
     }

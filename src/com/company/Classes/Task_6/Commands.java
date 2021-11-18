@@ -20,37 +20,33 @@ public class Commands {
             out.println("Введите команду ");
             choice = sc.nextInt();
             switch (choice){
-                default:
-                    out.println("Неверная команда");
-                    break;
-                case 1: time.getCurrentTime();
-                    break;
-                case 2:
+                case 1 -> time.getCurrentTime();
+                case 2 -> {
                     out.println("Введите часы ");
                     time.setHours(sc.nextInt());
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     out.println("Введите минуты ");
                     time.setMinutes(sc.nextInt());
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     out.println("Введите секунды ");
                     time.setSeconds(sc.nextInt());
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     out.println("На сколько нужно увеличить часы? ");
                     time.changeHours(sc.nextInt());
-                    break;
-                case 6:
+                }
+                case 6 -> {
                     out.println("На сколько нужно увеличить минуты? ");
                     time.changeMinutes(sc.nextInt());
-                    break;
-                case 7:
+                }
+                case 7 -> {
                     out.println("На сколько нужно увеличить секунды? ");
                     time.changeSeconds(sc.nextInt());
-                case 0:
-                    out.println("Закрытие программы");
-
+                }
+                case 0 -> out.println("Закрытие программы");
+                default -> out.println("Неверная команда");
             }
 
         }

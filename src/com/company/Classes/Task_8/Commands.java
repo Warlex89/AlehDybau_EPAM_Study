@@ -66,7 +66,6 @@ public class Commands {
                 case 3 -> {
                     out.println("Введите фамилию клиента: ");
                     String lastName = sc.nextLine();
-                    //sc.nextLine();
                     out.println("Введите имя клиента: ");
                     String name = sc.nextLine();
                     out.println("Введите отчество клиента: ");

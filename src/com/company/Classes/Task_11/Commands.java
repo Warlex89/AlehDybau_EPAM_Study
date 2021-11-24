@@ -5,11 +5,11 @@ import static java.lang.System.out;
 
 public class Commands {
     public static void main(String[] args) {
-        String heading = "Диссертация";
-        Text dissertation = new Text(new Word(heading).getWord());
+        Word heading = new Word("Диссертация");
         String line = "Язвенный колит представляет собой идиопатическое воспалительное заболевание" +
                 " с первичным поражением прямой кишки и различным по протяжённости поражением ободочной [6, 7]. ";
-        dissertation.addSentence(new Sentence(line));
+        Sentence sentence = new Sentence(line);
+        Text dissertation = new Text(heading, sentence);
         String line1 = "Это хроническое заболевание с непрерывным или рецидивирующим течением, " +
                 "которое проявляется преимущественно в третьем и четвёртом десятилетиях жизни [193]. ";
         dissertation.addSentence(new Sentence(line1));

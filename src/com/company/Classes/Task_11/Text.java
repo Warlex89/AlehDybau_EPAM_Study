@@ -5,9 +5,10 @@ public class Text {
     public String heading;
     public ArrayList<Sentence> text;
 
-    public Text(String heading) {
-        this.heading = heading;
+    public Text(Word heading, Sentence sentence) {
+        this.heading = heading.getWord();
         this.text = new ArrayList<>();
+        addSentence(sentence);
     }
 
     public void addSentence(Sentence sentence){

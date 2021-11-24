@@ -3,6 +3,11 @@ import java.util.Scanner;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
+/*
+ * Создать объект класса Текст, используя классы Предложение, Слово.
+ * Методы: дополнить текст, вывести на консоль текст, заголовок текста.
+ */
+
 public class Commands {
     public static void main(String[] args) {
         Word heading = new Word("Диссертация");

@@ -2,6 +2,11 @@ package com.company.Classes.Task_13;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/*
+ * Создать объект класса Государство, используя классы Область, Район, Город.
+ * Методы: вывести на консоль столицу, количество областей, площадь, областные центры.
+ */
+
 public class Commands {
     public static void main(String[] args) {
         Region minskRegion = new Region("Минская", new District(new City("Минск")), 1234);

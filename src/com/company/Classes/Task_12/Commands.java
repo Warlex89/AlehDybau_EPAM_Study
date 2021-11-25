@@ -5,6 +5,11 @@ import java.util.Scanner;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
+/*
+ *  Создать объект класса Автомобиль, используя классы Колесо, Двигатель.
+ *  Методы: ехать, заправляться, менять колесо, вывести на консоль марку автомобиля.
+ */
+
 public class Commands {
     public static void main(String[] args) {
         String name = "Mazda";

@@ -3,6 +3,11 @@ import java.util.Scanner;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
+/*
+ * Создать класс Payment с внутренним классом, с помощью объектов которого можно сформировать
+ * покупку из нескольких товаров.
+ */
+
 public class Commands {
     public static void main(String[] args) {
         Payment payment = new Payment();

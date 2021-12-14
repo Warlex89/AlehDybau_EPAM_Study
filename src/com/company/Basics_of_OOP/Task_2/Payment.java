@@ -17,12 +17,14 @@ public class Payment {
             balance = balance - foodBasket.getTotalPriceBasket();
             out.println(String.format("Стоимость покупки:  %.2f; Остаток на балансе:  %.2f",
                     foodBasket.getTotalPriceBasket(),balance));
+        }
+        if(foodBasket.getTotalPriceBasket() == 0) out.println("Покупательская корзина пуста, наберите товара ");
+        if(balance < foodBasket.getTotalPriceBasket()) out.println("Недостаточно средств на балансе ");
+        while (foodBasket.myProduct.size() != 0){
             for (int i = 0; i < foodBasket.myProduct.size(); i++){
                 foodBasket.myProduct.remove(foodBasket.myProduct.get(i));
             }
         }
-        if(foodBasket.getTotalPriceBasket() == 0) out.println("Покупательская корзина пуста, наберите товара ");
-        if(balance < foodBasket.getTotalPriceBasket()) out.println("Недостаточно средств на балансе ");
         return balance;
     }
 

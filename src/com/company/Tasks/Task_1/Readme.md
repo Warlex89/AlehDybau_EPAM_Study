@@ -23,7 +23,7 @@
     - класс WorkWithCatalog: работа с данными каталога
 3. В пакете Classes_Information:
     - классы (обычные, интерфейсы и перечисления): Book, Catalog, Email, MainPanel, Panels, ResourcesActions, TypeOfBook, User, UserType 
-4. В пакете Resource находится текстовые файлы:
+4. В пакете Resource находятся текстовые файлы:
    - books.txt: каталог
    - suggest.txt: список предложений для добавления книг в библиотеку
    - users.txt: данные пользователей

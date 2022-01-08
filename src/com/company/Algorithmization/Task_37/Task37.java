@@ -14,7 +14,6 @@ public class Task37 {
         out.println("Площадь правильного шестиуголника равна "+result);
     }
     public static double TriangleSquare(double a){
-        double siQ = sqrt(3)/4*pow(a,2);
-        return siQ;
+        return sqrt(3)/4*pow(a,2);
     }
 }

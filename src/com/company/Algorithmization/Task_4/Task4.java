@@ -9,7 +9,7 @@ public class Task4 {
     public static void main(String[] args){
         Random random = new Random();
         int n, array[], l, min = 0, max = 0, minIndex=0, maxIndex=0;
-        boolean st = true;
+        boolean st;
         out.println("Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы");
         Scanner sc = new Scanner(in);
         out.println("Введите размер массива N ");
@@ -17,7 +17,7 @@ public class Task4 {
         array = new int[n];
         for(int i=0; i<array.length; i++) {
             st = random.nextBoolean();
-            if (st == false) n = (-n);
+            if (!st) n = (-n);
             l = (int) (random() * n);// создаётся случайное действительное число от -n< до <n для массива
             array[i] = l;
             if(i == 0){

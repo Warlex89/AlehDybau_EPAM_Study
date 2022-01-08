@@ -10,7 +10,7 @@ public class Task6 {
     public static void main(String[] args){
         Random random = new Random();
         int n, array[], l, sum = 0;
-        boolean st = true, probablePrime = false;
+        boolean st, probablePrime;
         out.println("Задана последовательность N вещественных чисел. Вычислить сумму чисел, порядковые номера которых\n" +
                 "являются простыми числами");
         Scanner sc = new Scanner(in);
@@ -19,14 +19,13 @@ public class Task6 {
         array = new int[n];
         for(int i=0; i<array.length; i++) {
             st = random.nextBoolean();
-            if (st == false) n = (-n);
+            if (!st) n = (-n);
             l = (int) (random() * n);// создаётся случайное действительное число от -n< до <n для массива
             array[i] = l;
-            Integer integer = i;
-            BigInteger bigInteger = BigInteger.valueOf(integer); // Тест Рабина - Миллера на простое число
-            probablePrime = bigInteger.isProbablePrime((int) Math.log(integer));
+            BigInteger bigInteger = BigInteger.valueOf(i); // Тест Рабина - Миллера на простое число
+            probablePrime = bigInteger.isProbablePrime((int) Math.log(i));
             //out.println("индекс "+i+"; простое? "+probablePrime+"; Число = "+l); // проверка соответствия данных
-            if(probablePrime == true & i!=0 & i!=1) sum+=l; // тест называет 0 и 1 простыми числами, поэтому их исключаем из суммирования
+            if(probablePrime & i!=0 & i!=1) sum+=l; // тест называет 0 и 1 простыми числами, поэтому их исключаем из суммирования
         }
         out.println("Получен массив после замены "+ Arrays.toString(array));
         out.println("Сумма чисел = "+sum);

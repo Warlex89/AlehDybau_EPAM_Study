@@ -25,8 +25,10 @@ public class Task42 {public static void main(String[] args) {
         for (int i = 0; i < n; i++) arr[i] = (int) (random() * n) + 1;
         return arr;
     }
-    public static void resultsTask(int k, int m, int arr[]){
-        int sum = 0, res[] = new int[3], range = 0;
+    public static void resultsTask(int k, int m, int[] arr){
+        int sum = 0;
+        int[] res = new int[3];
+        int range = 0;
         for(int i = k-1; i < m-1; i++) {
             sum += arr[i];
             res[range] = arr[i];

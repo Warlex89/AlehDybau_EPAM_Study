@@ -7,7 +7,6 @@ import java.util.Random;
 
 public class Task5 {
     public static void main(String[] main){
-        Random random = new Random();
         int n, array[], l;
         out.println("Даны целые числа а1 ,а2 ,..., аn . Вывести на печать только те числа, для которых аi > i");
         Scanner sc = new Scanner(in);

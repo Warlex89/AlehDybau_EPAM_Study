@@ -9,7 +9,7 @@ public class Task2 {
     public static void main(String[] args){
         Random random = new Random();
         int n, z, array[], l, count = 0;
-        boolean st = true;
+        boolean st;
         out.println("Дана последовательность действительных чисел а1 ,а2 ,..., аn. Заменить все ее члены, большие данного Z, этим\n" +
                 "числом. Подсчитать количество замен.");
         Scanner sc = new Scanner(in);
@@ -20,7 +20,7 @@ public class Task2 {
         z = sc.nextInt();
         for(int i = 0; i< array.length; i++){
             st = random.nextBoolean();
-            if(st == false) n=(-n);
+            if(!st) n=(-n);
             l = (int)(random()*n);// создаётся случайное действительное число от -n< до <n для массива
             if(l>z){
                 array[i] = z;

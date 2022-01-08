@@ -2,7 +2,6 @@ package com.company.Algorithmization.Task_26;
 import java.util.Scanner;
 import static java.lang.System.*;
 
-
 public class Task26 {
     static int n;
     static long[][] a;
@@ -23,7 +22,7 @@ public class Task26 {
             } else evenEven();
         }
         int c = 1; // Считаем количество десятичных разрядов в наибольшем числе
-        long t = n * n;
+        long t = (long) n * n;
         while (t > 0) {
             c++;
             t = t / 10;

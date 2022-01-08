@@ -9,7 +9,7 @@ public class Task3 {
     public static void main(String[] args){
         Random random = new Random();
         int n, array[], l, countM = 0, countP = 0, countO = 0;
-        boolean st = true;
+        boolean st;
         out.println("Дан массив действительных чисел, размерность которого N. Подсчитать, сколько в нем отрицательных,\n" +
                 "положительных и нулевых элементов");
         Scanner sc = new Scanner(in);
@@ -18,7 +18,7 @@ public class Task3 {
         array = new int[n];
         for(int i=0; i<array.length; i++){
             st = random.nextBoolean();
-            if(st == false) n=(-n);
+            if(!st) n=(-n);
             l = (int)(random()*n);// создаётся случайное действительное число от -n< до <n для массива
             if(l>0) countP+=1;
             if(l<0) countM+=1;

@@ -15,7 +15,7 @@ public class Task39 {
             for (int i = 0; i < n; i++) {
                 l = (int) (random() * n);
                 array[i] = l;
-                maxValue = (array[i] > maxValue) ? array[i] : maxValue;
+                maxValue = Math.max(array[i], maxValue);
             }
         out.println(Arrays.toString(array));
         Arrays.sort(array);

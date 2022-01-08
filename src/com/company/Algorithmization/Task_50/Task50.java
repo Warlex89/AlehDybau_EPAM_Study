@@ -22,8 +22,8 @@ public class Task50 {
         for (int i = firstNumber; i < lastNumber; i++){
             List<Integer> arrN = numbers(i);
             boolean exNumber = true;
-            for (int j = 0; j < arrN.size(); j++){
-                if (arrN.get(j)%2 == 0){
+            for (Integer integer : arrN) {
+                if (integer % 2 == 0) {
                     exNumber = false;
                     break;
                 }

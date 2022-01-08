@@ -8,7 +8,7 @@ public class Task20 {
     public static void main(String[] args) {
         Random random = new Random();
         int n, array[][], l, z;
-        boolean st = true;
+        boolean st;
         out.println("Найти положительные элементы главной диагонали квадратной матрицы");
         Scanner sc = new Scanner(in);
         out.println("Введите размер квадратной матрицы ");
@@ -19,7 +19,7 @@ public class Task20 {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 st = random.nextBoolean();
-                if(st == false) z=(-z);
+                if(!st) z=(-z);
                 l = (int) (random() * z);// создаётся случайное действительное число от -n< до <n для массива
                 array[i][j] = l;
                 out.print(" " + array[i][j] + " ");

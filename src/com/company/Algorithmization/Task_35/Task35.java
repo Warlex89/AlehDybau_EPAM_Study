@@ -23,7 +23,6 @@ public class Task35 {
         return gcd.intValue();
     }
     public static int NOK(int a, int b, int nOD){
-        int nOK1 = a * b / nOD;
-        return nOK1;
+        return a * b / nOD;
     }
 }

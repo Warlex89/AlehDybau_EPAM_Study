@@ -6,7 +6,6 @@ import static java.lang.System.*;
 public class Task40 {
 
     public static void main(String[] args){
-        Task40 tsk = new Task40();
         int a, b, c, nOD;
         Scanner sc = new Scanner(in);
         out.println("Введите значение переменной а ");
@@ -15,7 +14,7 @@ public class Task40 {
         b = sc.nextInt();
         out.println("Введите значение переменной c ");
         c = sc.nextInt();
-        nOD = tsk.NOD(a,b,c);
+        nOD = NOD(a,b,c);
         if (nOD != 1){
             out.println("Указанные числа не являются взаимно простыми");
         } else out.println("Указанные числа взаимно простые");

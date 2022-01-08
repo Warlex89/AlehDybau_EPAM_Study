@@ -6,7 +6,6 @@ import static java.lang.Math.*;
 public class Task22 {
     public static void main(String[] args) {
         int n, m, array[][], l;
-        Task22 task22 = new Task22();
         boolean needIteration = true;
         out.println("Отсортировать строки матрицы по возрастанию и убыванию значений элементов.");
         Scanner sc = new Scanner(in);
@@ -42,7 +41,7 @@ public class Task22 {
         needIteration = true;
         // выводим полученную матрицу
         out.println("В результате сортировки получена следующая матрица (по возрастанию) ");
-        task22.printMatrix(array,n ,m);
+        printMatrix(array,n ,m);
         // производим сортировку матрицы по убыванию
         while (needIteration) {
             needIteration = false;
@@ -58,10 +57,10 @@ public class Task22 {
             }
         }
         out.println("В результате сортировки получена следующая матрица (по убыванию) ");
-        task22.printMatrix(array,n ,m);
+        printMatrix(array,n ,m);
     }
     // метод для вывода матрицы
-    public void printMatrix(int[][] array2, int n2, int m2){
+    public static void printMatrix(int[][] array2, int n2, int m2){
         for (int i = 0; i < n2; i++){
             for (int j = 0; j < m2; j++){
                 out.print(" " + array2[i][j] + " ");

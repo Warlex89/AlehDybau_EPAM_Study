@@ -21,14 +21,14 @@ public class Task9 {
         int nmb1 = array[0]; // выводимое число, которое чаще повторяется, но меньше из других
         int maxcount = 0; // подсчитывает максимальное количество повторений
         int countSt;// значение массива, которое просчитывается
-        for (int i = 0; i < array.length; i++){
-            countSt = array[i];
+        for (int j : array) {
+            countSt = j;
             count = 0;
-            for (int j = 0; j < array.length; j++){
-                count = (countSt == array[j]) ? (++count) : count;// подсчёт количества повторений
+            for (int k : array) {
+                count = (countSt == k) ? (++count) : count;// подсчёт количества повторений
                 nmb1 = (count > maxcount) ? countSt : nmb1;// проверка на количеств повторений
-                nmb1 = (count == maxcount) ? min(nmb1,countSt) : nmb1;// проверка на наименьшее число
-                maxcount = (count > maxcount) ? count : maxcount;
+                nmb1 = (count == maxcount) ? min(nmb1, countSt) : nmb1;// проверка на наименьшее число
+                maxcount = Math.max(count, maxcount);
             }
         }
         out.println("Искомая переменная = "+nmb1);

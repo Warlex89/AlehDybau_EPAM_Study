@@ -6,7 +6,6 @@ import static java.lang.Math.*;
 
 public class Task31 {
     public static void main(String[] args) {
-        Task31 task31 = new Task31();
         int a1, array1[];
         out.println("Сортировка вставками");
         Scanner sc = new Scanner(in);
@@ -18,15 +17,14 @@ public class Task31 {
         for (int i = 1; i < a1; i++){
             int current = array1[i];
             //int index = Arrays.binarySearch(array1,0, i, current); - возможно использовать данную строку вместо целого метода
-            int index = task31.binarySearch(array1,0, i, current);
+            int index = binarySearch(array1,0, i, current);
             if (index < 0) index = -(index) - 1;
             arraycopy(array1, index, array1, index+1, i-index);
             array1[index] = current;
         }
         out.println("Массив отсортирован " + Arrays.toString(array1));
     }
-    public int binarySearch(int[] arr, int first, int last, int number){
-        int currentIndex = Arrays.binarySearch(arr,first, last, number);
-        return currentIndex;
+    public static int binarySearch(int[] arr, int first, int last, int number){
+        return Arrays.binarySearch(arr,first, last, number);
     }
 }

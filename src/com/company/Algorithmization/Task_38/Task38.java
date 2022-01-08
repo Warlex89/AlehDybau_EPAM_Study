@@ -6,7 +6,9 @@ import static java.lang.System.*;
 
 public class Task38 {
     public static void main(String[] args) {
-        int n, array[][], l;
+        int n;
+        int[][] array;
+        int l;
         Scanner sc = new Scanner(in);
         out.println("Введите количество точек ");
         n = sc.nextInt();
@@ -23,18 +25,19 @@ public class Task38 {
         Result(array,n);
     }
     public static void Result(int[][] ar, int n){
-        int [][] array = ar;
         int[] x = new int[n];
         int[] y = new int[n];
-        int dist[][], valDist,max = 0;
+        int[][] dist;
+        int valDist;
+        int max = 0;
         for (int j = 0; j < n; j++){
-            x[j] = array[0][j];
-            y[j] = array[1][j];
+            x[j] = ar[0][j];
+            y[j] = ar[1][j];
         }
         for (int i = 0; i < n-1; i++) {
             for (int j = i+1; j < n; j++) {
                 valDist = Distance(x[i], y[i], x[j], y[j]);
-                max = (valDist > max) ? valDist : max;
+                max = Math.max(valDist, max);
             }
         }
         out.println("Максимальное расстояние между точками равно "+max);
@@ -54,7 +57,6 @@ public class Task38 {
         }
     }
     public static int Distance(int x2, int y2, int x1, int y1){
-        int distance = (int) sqrt(pow(x1 - x2,2) + pow(y1 - y2,2));
-        return distance;
+        return (int) sqrt(pow(x1 - x2,2) + pow(y1 - y2,2));
     }
 }

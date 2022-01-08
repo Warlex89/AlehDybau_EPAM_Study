@@ -8,11 +8,9 @@ public class Task9 {
         out.println(createWord(word));
     }
     public static String createWord(String word){
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(word.charAt(7));
-        stringBuilder.append(word.charAt(3));
-        stringBuilder.append(word.charAt(4));
-        stringBuilder.append(word.charAt(7));
-        return stringBuilder.toString();
+        return String.valueOf(word.charAt(7)) +
+                word.charAt(3) +
+                word.charAt(4) +
+                word.charAt(7);
     }
 }

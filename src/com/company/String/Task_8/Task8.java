@@ -19,9 +19,8 @@ public class Task8 {
         for (int i = 0; i < word.length() / 2; i++){
             String x = String.valueOf(word.charAt(i));
             String y = String.valueOf(word.charAt(word.length() - i - 1));
-            isPal = (x.equalsIgnoreCase(y)) ? true : false;
+            isPal = x.equalsIgnoreCase(y);
         }
-        String resPal = (isPal) ? " - палиндром" : " - не палиндром";
-        return resPal;
+        return (isPal) ? " - палиндром" : " - не палиндром";
     }
 }

@@ -6,7 +6,7 @@ import java.math.*;
 
 public class Task15 {
     public static void main(String[] args){
-        int x = 0;
+        int x;
         BigInteger s = BigInteger.valueOf(1);
         for(int i = 1; i<=200; i++){
             x = (int) pow(i,2);

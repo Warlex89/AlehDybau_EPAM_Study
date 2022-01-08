@@ -12,8 +12,7 @@ public class Task16 {
         double n = sc.nextDouble();
         out.println("Введите значение е ");
         double e = sc.nextDouble();
-        double a = 0;
-        double sum = 0;
+        double a, sum = 0;
         for(int i=0; i<=n; i++){
             a = 1/pow(2,i)+1/pow(3,i);
             if(abs(a)>=e){

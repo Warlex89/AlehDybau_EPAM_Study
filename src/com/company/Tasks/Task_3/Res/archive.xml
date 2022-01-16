@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><archive>
+    <students>
+        <student avScore="1" faculty="Лечебное дело" name="Дима" surname="Сушко" yearOfStudy="3"/>
+        <student avScore="7" faculty="Педиатрический" name="Татьяна" surname="Григоревич" yearOfStudy="2"/>
+        <student avScore="9" faculty="Психиатрический" name="Сергей" surname="Нестерович" yearOfStudy="5"/>
+    </students>
+    <lectures>
+        <lecture academicTitle="профессор" name="Степан" surname="Воробей"/>
+        <lecture academicTitle="доцент" name="Николай" surname="Дмитриенко"/>
+        <lecture academicTitle="ассистент" name="Алексей" surname="Жозинский"/>
+    </lectures>
+</archive>

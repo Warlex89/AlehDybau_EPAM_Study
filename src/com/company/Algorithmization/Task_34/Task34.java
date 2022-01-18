@@ -4,9 +4,12 @@ import java.util.Scanner;
 import static java.lang.System.*;
 import static java.lang.Math.*;
 
-
-public class Task34 {public static void main(String[] args) {
-    int n, array1[], array2[], sum, mltEl = 1;
+public class Task34 {
+    public static void main(String[] args) {
+    int n , sum;
+    int[] array1;
+    int[] array2;
+    int mltEl = 1;
     out.println("Составить программу, которая приводит эти дроби к общему знаменателю и упорядочивает их в порядке возрастания");
     Scanner sc = new Scanner(in);
     out.println("Введите размер массива дробей ");
@@ -26,7 +29,11 @@ public class Task34 {public static void main(String[] args) {
     // находим общий знаменатель
     for (int i = 0; i < n; i++) {
         sum = 0;
-        for (int j = i + 1; j < n; j++) sum = (array2[i] == array2[j]) ? ++sum : sum;
+        for (int j = i + 1; j < n; j++) {
+            if ((array2[i] == array2[j])) {
+                ++sum;
+            }
+        }
         if (sum == 0) mltEl *=array2[i];
 
     }

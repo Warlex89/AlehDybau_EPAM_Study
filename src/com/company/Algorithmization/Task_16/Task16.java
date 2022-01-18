@@ -4,7 +4,8 @@ import static java.lang.System.*;
 
 public class Task16 {
     public static void main(String[] args) {
-        int n, array[][];
+        int n;
+        int[][] array;
         out.println("Сформировать квадратную матрицу порядка n по заданному образцу(n - четное)");
         Scanner sc = new Scanner(in);
         out.println("Введите размер матрицы ");

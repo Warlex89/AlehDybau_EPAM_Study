@@ -6,7 +6,11 @@ import static java.lang.Math.*;
 
 public class Task19 {
     public static void main(String[] args) {
-        int n, m, array1[][], array2[],l, maxValue = 0, st = 0;
+        int n, m, l;
+        int[][] array1;
+        int[] array2;
+        int maxValue = 0;
+        int st = 0;
         out.println("Задана матрица неотрицательных чисел. Посчитать сумму элементов в каждом столбце. Определить, какой\n" +
                 "столбец содержит максимальную сумму.");
         Scanner sc = new Scanner(in);

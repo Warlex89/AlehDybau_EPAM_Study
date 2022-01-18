@@ -6,7 +6,8 @@ import java.util.Arrays;
 
 public class Task9 {
     public static void main(String[] args) {
-        int n, array[], l;
+        int n, l;
+        int[] array;
         out.println("В массиве целых чисел с количеством элементов n найти наиболее часто встречающееся число. Если таких\n" +
                 "чисел несколько, то определить наименьшее из них.");
         Scanner sc = new Scanner(in);
@@ -17,7 +18,7 @@ public class Task9 {
             l = (int) (random() * n);// создаётся случайное действительное число от 0 до <n для массива
             array[i] = l;
         }
-        int count = 0; // подсёт повторений у одного элемента
+        int count; // подсёт повторений у одного элемента
         int nmb1 = array[0]; // выводимое число, которое чаще повторяется, но меньше из других
         int maxcount = 0; // подсчитывает максимальное количество повторений
         int countSt;// значение массива, которое просчитывается
@@ -25,7 +26,9 @@ public class Task9 {
             countSt = j;
             count = 0;
             for (int k : array) {
-                count = (countSt == k) ? (++count) : count;// подсчёт количества повторений
+                if ((countSt == k)) {
+                    ++count;
+                }// подсчёт количества повторений
                 nmb1 = (count > maxcount) ? countSt : nmb1;// проверка на количеств повторений
                 nmb1 = (count == maxcount) ? min(nmb1, countSt) : nmb1;// проверка на наименьшее число
                 maxcount = Math.max(count, maxcount);

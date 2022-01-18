@@ -5,7 +5,8 @@ import static java.lang.Math.*;
 
 public class Task13 {
     public static void main(String[] args) {
-        int n, m, k, p, array[][], l;
+        int n, m, k, p, l;
+        int[][] array;
         out.println("Дана матрица. Вывести k-ю строку и p-й столбец матрицы");
         Scanner sc = new Scanner(in);
         out.println("Введите высоту матрицы ");

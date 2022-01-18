@@ -7,7 +7,8 @@ import java.util.Random;
 
 public class Task5 {
     public static void main(String[] main){
-        int n, array[], l;
+        int n, l;
+        int[] array;
         out.println("Даны целые числа а1 ,а2 ,..., аn . Вывести на печать только те числа, для которых аi > i");
         Scanner sc = new Scanner(in);
         out.println("Введите размер массива N ");

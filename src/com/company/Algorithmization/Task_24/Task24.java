@@ -4,8 +4,9 @@ import static java.lang.System.*;
 
 public class Task24 {
     public static void main(String[] args) {
-        int n, m, array2[][];
-        String array[][];
+        int n, m;
+        int[][] array2;
+        String[][] array;
         boolean needIteration = true;
         out.println("Сформировать случайную матрицу m x n, состоящую из нулей и единиц, причем в каждом столбце число единиц равно номеру столбца.");
         Scanner sc = new Scanner(in);

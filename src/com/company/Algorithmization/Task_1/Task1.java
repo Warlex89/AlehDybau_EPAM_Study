@@ -7,7 +7,9 @@ import static java.lang.Math.*;
 public class Task1 {
     public static void main(String[] args){
         out.println("В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К");
-        int n, array[],k, sum = 0;
+        int n, k;
+        int[] array;
+        int sum = 0;
         Scanner sc = new Scanner(in);
         out.println("Введите размер массива N ");
         n = sc.nextInt();

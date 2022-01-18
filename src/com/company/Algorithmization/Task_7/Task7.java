@@ -8,7 +8,9 @@ import java.util.Random;
 public class Task7 {
     public static void main(String[] args) {
         Random random = new Random();
-        int n, array[], l, max = 0;
+        int n, l;
+        int[] array;
+        int max = 0;
         boolean st;
         out.println("Даны действительные числа. Найти");
         Scanner sc = new Scanner(in);
@@ -22,7 +24,8 @@ public class Task7 {
             array[i] = l;
         }
         for(int j = 0; j < array.length/2; j++){
-            max = (array[j]+array[array.length-1-j] > max && j != array.length-1-j) ? array[j]+array[array.length-1-j] : max;
+            int i = array[j] + array[array.length - 1 - j];
+            max = (i > max && j != array.length-1-j) ? i : max;
         }
         out.println("Получен массив "+ Arrays.toString(array));
         out.println("Максимальная сумма чисел = "+max);

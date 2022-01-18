@@ -9,7 +9,9 @@ import java.util.Random;
 public class Task6 {
     public static void main(String[] args){
         Random random = new Random();
-        int n, array[], l, sum = 0;
+        int n, l;
+        int[] array;
+        int sum = 0;
         boolean st, probablePrime;
         out.println("Задана последовательность N вещественных чисел. Вычислить сумму чисел, порядковые номера которых\n" +
                 "являются простыми числами");

@@ -7,7 +7,10 @@ public class Task33 {
     Random random = new Random();
     List<Integer> inAr = new ArrayList<>();
     List<Integer> fromAr = new ArrayList<>();
-    int n, m, array[], array1[], sum[], l, x;
+    int n, m, l, x;
+    int[] array;
+    int[] array1;
+    int[] sum;
     boolean st;
     Scanner sc = new Scanner(in);
     out.println("Введите размер первого массива ");

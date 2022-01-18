@@ -8,7 +8,9 @@ import java.util.Random;
 public class Task2 {
     public static void main(String[] args){
         Random random = new Random();
-        int n, z, array[], l, count = 0;
+        int n, z, l;
+        int[] array;
+        int count = 0;
         boolean st;
         out.println("Дана последовательность действительных чисел а1 ,а2 ,..., аn. Заменить все ее члены, большие данного Z, этим\n" +
                 "числом. Подсчитать количество замен.");

@@ -8,7 +8,12 @@ import java.util.Random;
 public class Task4 {
     public static void main(String[] args){
         Random random = new Random();
-        int n, array[], l, min = 0, max = 0, minIndex=0, maxIndex=0;
+        int n, l;
+        int[] array;
+        int min = 0;
+        int max = 0;
+        int minIndex=0;
+        int maxIndex=0;
         boolean st;
         out.println("Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы");
         Scanner sc = new Scanner(in);

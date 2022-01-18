@@ -6,7 +6,9 @@ import static java.lang.System.*;
 
 public class Task39 {
     public static void main(String[] args) {
-        int n, array[], l, maxValue = 0;
+        int n, l;
+        int[] array;
+        int maxValue = 0;
         Scanner sc = new Scanner(in);
         out.println("Укажите размер массива ");
         n = sc.nextInt();

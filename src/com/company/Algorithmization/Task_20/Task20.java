@@ -7,7 +7,8 @@ import java.util.Random;
 public class Task20 {
     public static void main(String[] args) {
         Random random = new Random();
-        int n, array[][], l, z;
+        int n, l, z;
+        int[][] array;
         boolean st;
         out.println("Найти положительные элементы главной диагонали квадратной матрицы");
         Scanner sc = new Scanner(in);

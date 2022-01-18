@@ -5,7 +5,9 @@ import static java.lang.Math.*;
 
 public class Task25 {
     public static void main(String[] args) {
-        int n, m, array[][], l, maxNumber = 0;
+        int n, m, l;
+        int[][] array;
+        int maxNumber = 0;
         out.println("Найдите наибольший элемент матрицы и заменить все нечетные элементы на него");
         Scanner sc = new Scanner(in);
         out.println("Введите высоту матрицы ");

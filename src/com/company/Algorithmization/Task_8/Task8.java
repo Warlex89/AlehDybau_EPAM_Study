@@ -8,7 +8,12 @@ import java.util.Random;
 public class Task8 {
     public static void main(String[] args){
         Random random = new Random();
-        int n, array1[],array2[], l, min, countmin=0, index = 0;
+        int n, l;
+        int[] array1;
+        int[] array2;
+        int min;
+        int countmin=0;
+        int index = 0;
         boolean st;
         out.println("Дана последовательность целых чисел. Образовать новую последовательность, выбросив из\n" +
                 "исходной те члены, которые равны min().");

@@ -6,7 +6,9 @@ import static java.lang.Math.*;
 
 public class Task30 {
     public static void main(String[] args) {
-        int a1, array1[], k, count = 0;
+        int a1, k;
+        int[] array1;
+        int count = 0;
         boolean needIteration = true;
         out.println("Сортировка обменами");
         Scanner sc = new Scanner(in);

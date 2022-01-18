@@ -6,7 +6,10 @@ import static java.lang.Math.*;
 
 public class Task28 {
     public static void main(String[] args) {
-        int a1, a2, array1[], array2[], sum[];
+        int a1, a2;
+        int[] array1;
+        int[] array2;
+        int[] sum;
         out.println("Даны две последовательности образовать из них новую последовательность чисел так, чтобы она тоже была неубывающей. Примечание. Дополнительный массив не использовать.");
         Scanner sc = new Scanner(in);
         out.println("Введите размер первой массива ");

@@ -6,7 +6,8 @@ import java.util.Arrays;
 
 public class Task10 {
     public static void main(String[] args) {
-        int n, array[], l;
+        int n, l;
+        int[] array;
         out.println("Дан целочисленный массив с количеством элементов п. Сжать массив, выбросив из него каждый второй\n" +
                 "элемент (освободившиеся элементы заполнить нулями)");
         Scanner sc = new Scanner(in);

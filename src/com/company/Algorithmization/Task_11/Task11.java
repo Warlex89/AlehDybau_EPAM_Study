@@ -5,7 +5,8 @@ import static java.lang.Math.*;
 
 public class Task11 {
     public static void main(String[] args) {
-        int n, m, array[][], l;
+        int n, m, l;
+        int[][] array;
         out.println("Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего");
         Scanner sc = new Scanner(in);
         out.println("Введите размер высоту матрицы ");

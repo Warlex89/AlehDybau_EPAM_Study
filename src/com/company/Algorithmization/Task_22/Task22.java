@@ -5,7 +5,8 @@ import static java.lang.Math.*;
 
 public class Task22 {
     public static void main(String[] args) {
-        int n, m, array[][], l;
+        int n, m, l;
+        int[][] array;
         boolean needIteration = true;
         out.println("Отсортировать строки матрицы по возрастанию и убыванию значений элементов.");
         Scanner sc = new Scanner(in);

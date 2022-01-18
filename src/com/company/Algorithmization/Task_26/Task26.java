@@ -70,13 +70,13 @@ public class Task26 {
     static void evenOdd() {
         n -= 2; // Сначала построить квадрат размерностью n-2
         evenEven();
-        long delta = (n + 1) << 1; // 2*(n + 1)
+        long delta = (long) (n + 1) << 1; // 2*(n + 1)
         for (int i = n; i > 0; i--)
             for (int j = n; j > 0; j--)
                 a[i][j] = a[i - 1][j - 1] + delta;
         n += 2;
         final int LAST = n - 1; // Правый столбец / нижняя строка
-        long d = n * n + 1;
+        long d = (long) n * n + 1;
         int m = n >> 1; // n/2
         a[0][0] = (m << 1) + m - 1; // 3*m - 1
         a[0][LAST] = 1;
@@ -89,7 +89,7 @@ public class Task26 {
             a[LAST][c++] = d - t;
         }
         for (int j = 1; j <= m; j++) {
-            long t = j << 1; // 2*j
+            long t = (long) j << 1; // 2*j
             a[LAST][c] = t;
             a[0][c++] = d - t;
         }
@@ -102,7 +102,7 @@ public class Task26 {
             a[c++][LAST] = d - t;
         }
         for (int j = 1; j <= (m >> 1) + 1; j++) {
-            long t = (m << 2) - j - 1; // 4*m - j - 1
+            long t = ((long) m << 2) - j - 1; // 4*m - j - 1
             a[c][LAST] = t;
             a[c++][0] = d - t;
         }

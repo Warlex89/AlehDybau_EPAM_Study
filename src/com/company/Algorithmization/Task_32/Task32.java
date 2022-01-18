@@ -9,7 +9,9 @@ import java.util.Random;
 public class Task32 {
     public static void main(String[] args) {
     Random random = new Random();
-    int n, array[], l, h = 1;
+    int n, l;
+    int[] array;
+    int h = 1;
     boolean st;
     out.println("Сортировка Шелла");
     Scanner sc = new Scanner(in);

@@ -17,7 +17,9 @@ public class Task17 {
         for (int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++){
                 array[i][j] = ((sin(sqrt(i)-sqrt(j))/n));
-                count = (array[i][j] > 0) ? ++count : count;
+                if ((array[i][j] > 0)) {
+                    ++count;
+                }
                 String result = decimalFormat.format(array[i][j]); // округляем элемент до 2-х знаков после запятой
                 out.print(" " + result + " ");
             }

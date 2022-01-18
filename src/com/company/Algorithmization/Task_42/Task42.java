@@ -38,7 +38,7 @@ public class Task42 {public static void main(String[] args) {
                 range = 0;
                 sum = 0;
             }
-            if (range < 3 && i > m-3 && i < m-1) out.println("Количество оставшихся чисел менее 3-х");
+            if (i > m - 3 && i < m - 1) out.println("Количество оставшихся чисел менее 3-х");
         }
     }
 }

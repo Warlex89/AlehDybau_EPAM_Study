@@ -6,7 +6,8 @@ import static java.lang.Math.*;
 
 public class Task31 {
     public static void main(String[] args) {
-        int a1, array1[];
+        int a1;
+        int[] array1;
         out.println("Сортировка вставками");
         Scanner sc = new Scanner(in);
         out.println("Введите размер массива ");

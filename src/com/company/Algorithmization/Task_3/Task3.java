@@ -8,7 +8,11 @@ import java.util.Random;
 public class Task3 {
     public static void main(String[] args){
         Random random = new Random();
-        int n, array[], l, countM = 0, countP = 0, countO = 0;
+        int n, l;
+        int[] array;
+        int countM = 0;
+        int countP = 0;
+        int countO = 0;
         boolean st;
         out.println("Дан массив действительных чисел, размерность которого N. Подсчитать, сколько в нем отрицательных,\n" +
                 "положительных и нулевых элементов");

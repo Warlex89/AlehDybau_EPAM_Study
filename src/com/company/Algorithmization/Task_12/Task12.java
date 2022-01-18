@@ -5,7 +5,8 @@ import static java.lang.Math.*;
 
 public class Task12 {
     public static void main(String[] args) {
-        int n, array[][], l;
+        int n, l;
+        int[][] array;
         out.println("Дана квадратная матрица. Вывести на экран элементы, стоящие на диагонали.");
         Scanner sc = new Scanner(in);
         out.println("Введите размер квадратной матрицы ");

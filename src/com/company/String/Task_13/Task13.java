@@ -18,10 +18,10 @@ public class Task13 {
         String lonWord = "";
         int maxCount = 0;
         String[] wordArray = words.split(" ");
-        for (int i = 0; i < wordArray.length; i++){
-            if (wordArray[i].length() > maxCount){
-                maxCount = wordArray[i].length();
-                lonWord = wordArray[i];
+        for (String s : wordArray) {
+            if (s.length() > maxCount) {
+                maxCount = s.length();
+                lonWord = s;
             }
         }
         return lonWord;

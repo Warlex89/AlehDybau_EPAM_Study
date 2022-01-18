@@ -16,8 +16,11 @@ public class Task10 {
     }
     public static int countA (String sentence){
         int count = 0;
-        for (int i = 0; i < sentence.length(); i++)
-            count = (sentence.charAt(i) == 'a') ? ++count : count;
+        for (int i = 0; i < sentence.length(); i++) {
+            if ((sentence.charAt(i) == 'a')) {
+                ++count;
+            }
+        }
         return count;
     }
 }

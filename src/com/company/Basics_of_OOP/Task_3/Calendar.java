@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Calendar {
-    private ArrayList<Holiday> holidays;
-    private ArrayList<Weekend> weekends;
+    private final ArrayList<Holiday> holidays;
+    private final ArrayList<Weekend> weekends;
 
     public Calendar(int year) {
         this.holidays = new ArrayList<>();
@@ -19,11 +19,11 @@ public class Calendar {
         LocalDate localDate = LocalDate.of(year,1,1);
         while (localDate.getYear() == year){
             if (localDate.getDayOfWeek() == DayOfWeek.SATURDAY){
-                weekends.add(new Weekend(localDate,"Суббота"));
+                weekends.add(new Weekend(localDate, "Суббота"));
                 localDate = localDate.plusDays(1);
             }
             if (localDate.getDayOfWeek() == DayOfWeek.SUNDAY){
-                weekends.add(new Weekend(localDate,"Воскресение"));
+                weekends.add(new Weekend(localDate, "Воскресение"));
                 localDate = localDate.plusDays(1);
             }
             if (localDate.getDayOfWeek() != DayOfWeek.SATURDAY
@@ -34,7 +34,7 @@ public class Calendar {
     }
 
     public void addHoliday(LocalDate holiday, String nameOfHoliday){
-        holidays.add(new Holiday(holiday,nameOfHoliday));
+        holidays.add(new Holiday(holiday, nameOfHoliday));
     }
 
     public void printAllHolidays(){
@@ -56,8 +56,8 @@ public class Calendar {
         if(non) System.out.println("Такого праздника нет в вашем календаре");
     }
 
-    class Holiday extends Day{
-        private String nameOfHoliday;
+    static class Holiday extends Day{
+        private final String nameOfHoliday;
 
         public Holiday(LocalDate holyDate, String nameOfHoliday) {
             this.nameOfHoliday = nameOfHoliday;
@@ -75,8 +75,8 @@ public class Calendar {
         }
     }
 
-    class Weekend extends Day{
-        private String nameOfWeekend;
+    static class Weekend extends Day{
+        private final String nameOfWeekend;
 
         public Weekend(LocalDate weekend, String nameOfWeekend) {
             this.nameOfWeekend = nameOfWeekend;

@@ -15,8 +15,8 @@ public class Payment {
         if(balance >= foodBasket.getTotalPriceBasket()
                 && foodBasket.getTotalPriceBasket() != 0){
             balance = balance - foodBasket.getTotalPriceBasket();
-            out.println(String.format("Стоимость покупки:  %.2f; Остаток на балансе:  %.2f",
-                    foodBasket.getTotalPriceBasket(),balance));
+            out.printf("Стоимость покупки:  %.2f; Остаток на балансе:  %.2f%n",
+                    foodBasket.getTotalPriceBasket(),balance);
         }
         if(foodBasket.getTotalPriceBasket() == 0) out.println("Покупательская корзина пуста, наберите товара ");
         if(balance < foodBasket.getTotalPriceBasket()) out.println("Недостаточно средств на балансе ");

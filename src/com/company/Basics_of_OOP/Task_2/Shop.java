@@ -23,4 +23,8 @@ public class Shop {
     public void addNewProduct(String nameProduct, double price){
         products.add(new Product(nameProduct, price));
     }
+
+    public String getNameShop() {
+        return nameShop;
+    }
 }

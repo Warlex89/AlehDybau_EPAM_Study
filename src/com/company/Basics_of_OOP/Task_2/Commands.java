@@ -39,7 +39,7 @@ public class Commands {
                     String name = sc.nextLine();
                     payment.foodBasket.removeProductFromMyBasket(name);
                 }
-                case 5 -> out.println(String.format("Общая сумма корзины =  %.2f",payment.foodBasket.getTotalPriceBasket()));
+                case 5 -> out.printf("Общая сумма корзины =  %.2f%n",payment.foodBasket.getTotalPriceBasket());
 
                 case 6 -> balance = payment.myPayment(balance);
                 case 0 -> out.println("Закрытие программы");
